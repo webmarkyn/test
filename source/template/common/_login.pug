@@ -1,0 +1,34 @@
+.wrapper
+    .login-box
+        h2 Авторизуйтесь
+        hr
+        form.login-form(
+            name='login-form'
+            method='post'
+        )
+            label(for='login')
+            input#login(
+                type='text'
+                placeholder='Логин'
+            )
+            label(for='password')
+            input#password(
+                type='password'
+                placeholder='Пароль'
+            )
+            input(type='checkbox')#arentrobot
+            label(for='arentrobot') Я человек
+            span Вы точно не робот?
+            input#yes(
+                type='radio'
+                name='robot_security'
+                value='Yes'
+            )
+            label(for='yes') Да
+            input#no(
+                type='radio'
+                name='robot_security'
+                value='No'
+            )
+            label(for='no') Не уверен
+

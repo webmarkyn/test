@@ -1,0 +1,16 @@
+*{
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+//mixins
+@import 'mixins/font-face';
+
+//styles
+@import 'common/login';
+@import 'common/fonts';
+
+
+
