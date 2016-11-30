@@ -1,0 +1,24 @@
+.header
+        .header__svg-background-block
+                svg.svg-background
+                        use(xlink:href="assets/img/sprite.svg#portfolio_header")
+        .menu
+            .menu_container
+                include ../partials/__social-icons
+                .menu__icon
+                        a.menu__link(href="")
+                                svg.menu-svg.hamburger()
+                                        use(xlink:href="assets/img/sprite.svg#hamburger")  
+        include ../partials/__personal-info
+        
+        .header__triangle
+                //- 115px text on svg
+                svg.triangle(preserveAspectRatio="xMidYMid meet")
+                        use(xlink:href="assets/img/sprite.svg#bg")
+        .down-arrow-button.clearfix
+                a.down-arrow-button__link
+                        svg.down-arrow-button__link__svg()
+                                use(xlink:href="assets/img/sprite.svg#arrow_down")
+                
+        //- .page-info
+        //-         span.page-info__title #{title}
